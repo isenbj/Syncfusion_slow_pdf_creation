@@ -48,7 +48,7 @@ class TestScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print('building new screen!');
-    // final args = ModalRoute.of(context)!.settings.arguments as String;
-    return Scaffold(body: SfPdfViewer.asset('assets/radio.pdf'));
+    final args = ModalRoute.of(context)!.settings.arguments as String;
+    return Scaffold(body: SfPdfViewer.asset('assets/claim_questionnaire.pdf'));
   }
 }
